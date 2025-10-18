@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio - FastTravel</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #B6CFD8;
+  color: #18333D;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #18333D;
+  color: #ffffff;
+  font-family: 'Dancing Script';
+}
+
+header img {
+  width: 100px;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #406877;
+}
+
+.navbar a {
+  color: #ffffff;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #6d9eb1;
+  color: #ffffff;
+}
+
+.main {
+  flex: 70%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+  text-align: center;
+}
+
+.main h2 {
+  margin-bottom: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 280px;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.gallery {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+
+.duze img {
+  width: 600%;
+  height: 200%;
+  object-fit: cover;
+}
+
+.male img {
+  width: 600%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dlugie img {
+  width: 600%;
+  height: 200%;
+  object-fit: cover;
+}
+
+.szerokie img {
+  width: 540%;
+  height: 140%;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(24, 51, 61, 0.7);
+  color: #fff;
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.szerokie {
+  grid-column: span 2;
+}
+
+.duze {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.dlugie {
+  grid-row: span 2;
+}
+
+.male {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 150px;
+  }
+.duze img {
+  width: 220%;
+  height: 120%;
+  object-fit: cover;
+}
+
+.male img {
+  width: 220%;
+  height: 120%;
+  object-fit: cover;
+}
+
+.dlugie img {
+width: 220%;
+  height: 120%;
+  object-fit: cover;
+}
+
+.szerokie img {
+  width: 540%;
+  height: 120%;
+  object-fit: cover;
+}
+  .duze, .szerokie, .dlugie, .male {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #406877;
+  color: #ffffff;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <img src="321.png" width="13%">
+    <p>FastTravel</p>
+</header>
+
+<div class="navbar">
+  <a href="index.html">Strona główna</a>
+  <a href="oferta.html">Oferta</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="kontakt.html">Kontakt</a>
+</div>
+
+<div class="main">
+  <h2>Nasze dotychczasowe wycieczki:</h2>
+  <p>Zobacz zdjęcia z naszych najpiękniejszych podróży po całym świecie.</p>
+
+  <div class="gallery">
+
+    <div class="gallery szerokie">
+      <img src="kanada_vancouver.jpg" alt="Kanada - Vancouver">
+      <div class="caption">Kanada — Vancouver, lipiec 2024</div>
+    </div>
+
+    <div class="gallery duze">
+      <img src="nowa_zelandia_queenstown.jpg" alt="Nowa Zelandia - Queenstown">
+      <div class="caption">Nowa Zelandia — Queenstown, maj 2023</div>
+    </div>
+
+    <div class="gallery dlugie">
+      <img src="meksyk_mexico_city.jpg" alt="Meksyk - Mexico City">
+      <div class="caption">Meksyk — Mexico City, marzec 2024</div>
+    </div>
+
+    <div class="gallery male">
+      <img src="wlochy_florencja.jpg" alt="Włochy - Florencja">
+      <div class="caption">Włochy — Florencja, sierpień 2024</div>
+    </div>
+
+    <div class="gallery dlugie">
+      <img src="kanada_toronto.jpg" alt="Kanada - Toronto">
+      <div class="caption">Kanada — Toronto, wrzesień 2024</div>
+    </div>
+
+    <div class="gallery male">
+      <img src="maroko_marrakesz.jpg" alt="Maroko - Marrakesz">
+      <div class="caption">Maroko — Marrakesz, grudzień 2023</div>
+    </div>
+
+    <div class="gallery male">
+      <img src="szwajcaria_zurych.jpg" alt="Szwajcaria - Zurych">
+      <div class="caption">Szwajcaria — Zurych, listopad 2023</div>
+    </div>
+
+    <div class="gallery szerokie">
+      <img src="finlandia_helsinki.jpg" alt="Finlandia - Helsinki">
+      <div class="caption">Finlandia — Helsinki, styczeń 2025</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>FastTravel. Wszelkie prawa zastrzeżone. Autor:Kopertowski Kacper 4Ti1</p>
+</footer>
+
+</body>
+</html>

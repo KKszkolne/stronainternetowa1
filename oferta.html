@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Oferta - FastTravel</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #B6CFD8;
+  color: #18333D;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #18333D;
+  color: #ffffff;
+  font-family: 'Dancing Script';
+}
+
+header img {
+  width: 100px;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #406877;
+}
+
+.navbar a {
+  color: #ffffff;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #6d9eb1;
+  color: #ffffff;
+}
+
+.main {
+  flex: 70%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.offers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.offers .offer {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f0f8ff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.offers .offer img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.offers .offer h3 {
+  margin: 0 0 5px 0;
+}
+
+.offers .offer p {
+  margin: 5px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #18333D;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #406877;
+  color: white;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #406877;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .offers {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <img src="321.png" width="13%">
+    <p>FastTravel</p>
+</header>
+
+<div class="navbar">
+  <a href="index.html">Strona główna</a>
+  <a href="oferta.html">Oferta</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="kontakt.html">Kontakt</a>
+</div>
+
+<div class="main">
+  <h2>Nasza Oferta Wycieczek</h2>
+  <p>Oferujemy wycieczki w różne zakątki świata. Każde miasto ma przygotowany krótki plan zwiedzania i atrakcji, aby Twoja podróż była pełna niezapomnianych chwil.</p>
+
+  <div class="offers">
+    <div class="offer">
+      <img src="amsterdam.jpg" alt="Amsterdam">
+      <h3>Amsterdam</h3>
+      <p>Plan wycieczki: Rejs po kanałach, Rijksmuseum, dzielnica Jordaan, kwiatowe targi.</p>
+    </div>
+    <div class="offer">
+      <img src="rzym.jpg" alt="Rzym">
+      <h3>Rzym</h3>
+      <p>Plan wycieczki: Koloseum, Watykan i Bazylika św. Piotra, Fontanna di Trevi, Forum Romanum.</p>
+    </div>
+    <div class="offer">
+      <img src="paryz.jpg" alt="Paryż">
+      <h3>Paryż</h3>
+      <p>Plan wycieczki: Wieża Eiffla, Luwr, Montmartre, rejs po Sekwanie.</p>
+    </div>
+    <div class="offer">
+      <img src="praga.jpg" alt="Praga">
+      <h3>Praga</h3>
+      <p>Plan wycieczki: Zamek Praski, Most Karola, Stare Miasto, zegar astronomiczny.</p>
+    </div>
+    <div class="offer">
+      <img src="tokyo.jpg" alt="Tokio">
+      <h3>Tokio</h3>
+      <p>Plan wycieczki: Świątynia Senso-ji, Shibuya Crossing, Ogród cesarski, Tsukiji Market.</p>
+    </div>
+    <div class="offer">
+      <img src="nowy_jork.jpg" alt="Nowy Jork">
+      <h3>Nowy Jork</h3>
+      <p>Plan wycieczki: Statua Wolności, Central Park, Times Square, Muzeum MET.</p>
+    </div>
+    <div class="offer">
+      <img src="kair.jpg" alt="Kair">
+      <h3>Kair</h3>
+      <p>Plan wycieczki: Piramidy w Gizie, Sfinks, Muzeum Egipskie, bazary Khan el-Khalili.</p>
+    </div>
+    <div class="offer">
+      <img src="stambul.jpg" alt="Stambuł">
+      <h3>Stambuł</h3>
+      <p>Plan wycieczki: Hagia Sophia, Błękitny Meczet, Grand Bazaar, rejs po Bosforze.</p>
+    </div>
+    <div class="offer">
+      <img src="moskwa.jpg" alt="Moskwa">
+      <h3>Moskwa</h3>
+      <p>Plan wycieczki: Plac Czerwony, Kreml, Sobór Wasyla Błogosławionego, Teatr Bolszoj.</p>
+    </div>
+  </div>
+
+  <table>
+    <tr>
+      <th>Kraj</th>
+      <th>Miasto</th>
+      <th>Cena</th>
+      <th>Czas pobytu</th>
+    </tr>
+    <tr>
+      <td>Holandia</td>
+      <td>Amsterdam</td>
+      <td>1600 PLN</td>
+      <td>3 dni</td>
+    </tr>
+    <tr>
+      <td>Włochy</td>
+      <td>Rzym</td>
+      <td>1800 PLN</td>
+      <td>4 dni</td>
+    </tr>
+    <tr>
+      <td>Francja</td>
+      <td>Paryż</td>
+      <td>1700 PLN</td>
+      <td>3 dni</td>
+    </tr>
+    <tr>
+      <td>Czechy</td>
+      <td>Praga</td>
+      <td>1400 PLN</td>
+      <td>3 dni</td>
+    </tr>
+    <tr>
+      <td>Japonia</td>
+      <td>Tokio</td>
+      <td>4000 PLN</td>
+      <td>6 dni</td>
+    </tr>
+    <tr>
+      <td>USA</td>
+      <td>Nowy Jork</td>
+      <td>3500 PLN</td>
+      <td>6 dni</td>
+    </tr>
+    <tr>
+      <td>Egipt</td>
+      <td>Kair</td>
+      <td>2200 PLN</td>
+      <td>4 dni</td>
+    </tr>
+    <tr>
+      <td>Turcja</td>
+      <td>Stambuł</td>
+      <td>2000 PLN</td>
+      <td>4 dni</td>
+    </tr>
+    <tr>
+      <td>Rosja</td>
+      <td>Moskwa</td>
+      <td>2500 PLN</td>
+      <td>4 dni</td>
+    </tr>
+  </table>
+</div>
+
+<footer>
+  <p>FastTravel. Wszelkie prawa zastrzeżone. Autor:Kopertowski Kacper 4Ti1</p>
+</footer>
+
+</body>
+</html>
+
+

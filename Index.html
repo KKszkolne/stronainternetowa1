@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Moja Strona</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #B6CFD8;
+  color: #18333D;
+}
+
+header {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 10px;
+  background-color: #18333D;
+  color: #ffffff;
+  font-family: 'Dancing Script';
+}
+
+header img {
+  width: 100px; 
+  height: auto;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #406877;
+}
+
+.navbar a {
+  color: #ffffff;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #6d9eb1;
+  color: #ffffff;
+}
+
+.main {
+  flex: 70%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-content .text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.main-content .text ul {
+  padding-left: 20px;
+}
+
+.main-content .image {
+  flex: 1;
+  min-width: 250px;
+}
+
+.main-content .image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #406877;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <img src="321.png" width="13%">
+    <p>FastTravel</p>
+</header>
+
+<div class="navbar">
+  <a href="index.html">Strona główna</a>
+  <a href="oferta.html">Oferta</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="kontakt.html">Kontakt</a>
+</div>
+  
+<div class="main main-content">
+  <div class="text">
+    <h2>Witaj w FastTravel!</h2>
+    <p>Jesteśmy firmą organizującą niezapomniane wycieczki w Polsce i za granicą. Naszym celem jest zapewnienie wyjątkowych przeżyć i komfortu podróży dla każdego klienta.</p>
+
+    <h3>Dlaczego warto nas wybrać?</h3>
+    <ul>
+      <li>Doświadczeni przewodnicy</li>
+      <li>Bezpieczne i komfortowe wyjazdy</li>
+      <li>Atrakcyjne ceny i elastyczne terminy</li>
+    </ul>
+  </div>
+  
+  <div class="image">
+    <img src="1.jpg" alt="Wycieczka z FastTravel">
+  </div>
+</div>
+
+<footer>
+  <p>FastTravel. Wszelkie prawa zastrzeżone. Autor:Kopertowski Kacper 4Ti1</p>
+</footer>
+
+</body>
+</html>
+
